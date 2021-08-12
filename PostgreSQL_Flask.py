@@ -5,7 +5,7 @@ import logging as lg
 
 app = Flask(__name__)
 #lg.basicConfig(filename='Employee_Management.log', level=lg.INFO,  format='%(asctime)s %(message)s', filemode='w')
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:password@localhost/Employee_Management'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:password@avi123/Employee_Management'
 app.config['SECRET_KEY'] = "random string"
 db = SQLAlchemy(app)
 
